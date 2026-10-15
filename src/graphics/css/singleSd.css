@@ -1,0 +1,265 @@
+body {
+  background-image: url('../images/4x3.png');
+}
+
+/*--------------------------------------------------
+timer
+--------------------------------------------------*/
+.time {
+  position: absolute;
+  width: 443px;
+  height: 80px;
+  left: 1442px;
+  top: 959.7px;
+  text-align: center;
+  /* border: 1px solid #000000; */
+}
+
+.time > span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 75px;
+  height: 75px;
+  font-family: 'NotoSansJP-Bold';
+  letter-spacing: 0.2em;
+}
+
+.time > span.stopped {
+  color: white;
+}
+
+.time > span.running {
+  color: white;
+}
+
+.time > span.paused {
+  color: #bfbfbf;
+  -webkit-text-stroke: 2.7px #4e4e4e;
+}
+
+.time > span.finished {
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.estimate {
+  position: absolute;
+  width: 470px;
+  height: 44px;
+  left: 865px;
+  top: 1002px;
+  text-align: center;
+  line-height: 44px;
+  /* border: 1px solid #000000; */
+}
+
+.estimate > span {
+  font-size: 28px;
+  font-family: 'NotoSansJP-Medium';
+}
+
+.estimate > span#est {
+  letter-spacing: 0.2em;
+}
+
+/*--------------------------------------------------
+gameinfo
+--------------------------------------------------*/
+
+.gametitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 1020px;
+  height: 58.5px;
+  top: 925px;
+  left: 355px;
+  /* border: 2px solid #000000; */
+}
+
+.gametitle span {
+  position: relative;
+  font-size: 45px;
+  font-family: 'NotoSansJP-Bold';
+}
+
+.runcategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 470px;
+  height: 44px;
+  left: 395px;
+  top: 1002px;
+  font-size: 33px;
+  font-family: 'NotoSansJP-Medium';
+  /* border: 1px solid black; */
+}
+
+/*--------------------------------------------------
+player
+--------------------------------------------------*/
+
+.player1 .player_name {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: absolute;
+  width: 415px;
+  height: 45px;
+  left: 106px;
+  top: 395px;
+  font-size: 35px;
+  font-family: 'NotoSansJP-Medium';
+  /* border: 1px solid #000000; */
+}
+
+.player1.clear .player_time {
+  opacity: 0;
+}
+
+/* SNS表示エリア */
+.player1 .sns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  box-sizing: border-box;
+  width: 415px;
+  height: 45px;
+  left: 106px;
+  top: 395px;
+  padding: 0 6px;
+  font-family: 'NotoSansJP-Medium';
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+
+.player1 .sns_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 100%;
+  margin-right: 6px;
+}
+
+/* アイコン画像 */
+.player1 .sns_icon img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* SNS ID */
+.player1 .sns_id {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  transform: translateY(-1px);
+}
+
+/* ロゴの見た目に合わせて個別調整 */
+.player1 .twitch_icon img {
+  width: 34px;
+  height: 34px;
+}
+
+.player1 .twitter_icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.player1 .youtube_icon img {
+  width: 38px;
+  height: 38px;
+}
+
+/*--------------------------------------------------
+Commentator
+--------------------------------------------------*/
+
+.commentator1 .commentator_name {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: absolute;
+  width: 415px;
+  height: 45px;
+  left: 106px;
+  top: 585px;
+  font-size: 35px;
+  font-family: 'NotoSansJP-Medium';
+  /* border: 1px solid #000000; */
+}
+
+/* SNS表示エリア */
+.commentator1 .sns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  box-sizing: border-box;
+  width: 415px;
+  height: 45px;
+  left: 106px;
+  top: 585px;
+  padding: 0 6px;
+  /* border: 1px solid #000; */
+  font-family: 'NotoSansJP-Medium';
+  overflow: hidden;
+}
+
+.commentator1 .sns_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 100%;
+  margin-right: 6px;
+}
+
+/* アイコン画像 */
+.commentator1 .sns_icon img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* SNS ID */
+.commentator1 .sns_id {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  transform: translateY(-1px);
+}
+
+/* ロゴの見た目に合わせて個別調整 */
+.commentator1 .twitch_icon img {
+  width: 34px;
+  height: 34px;
+}
+
+.commentator1 .twitter_icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.commentator1 .youtube_icon img {
+  width: 38px;
+  height: 38px;
+}

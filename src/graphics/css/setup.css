@@ -1,0 +1,87 @@
+body {
+  background-image: url('../images/standby.png');
+}
+
+/*--------------------------------------------------
+Schedule
+--------------------------------------------------*/
+.mokuji {
+  position: absolute;
+  width: 1000px;
+  height: 980px;
+  top: 95px;
+  left: 44px;
+  /* border: 1px solid black; */
+}
+
+.next1 {
+  position: absolute;
+  width: 1000px;
+  height: 380px;
+  /* border: 1px solid red; */
+}
+
+.next2 {
+  position: absolute;
+  width: 1000px;
+  height: 155px;
+  top: 615px;
+  /* border: 1px solid blue; */
+}
+
+.next3 {
+  position: absolute;
+  width: 1000px;
+  height: 150px;
+  top: 820px;
+  /* border: 1px solid violet; */
+}
+
+.next1 .title {
+  height: 150px;
+  font-size: 55px;
+  line-height: 70px;
+  font-family: 'NotoSansJP-Bold';
+  /* border: 1px solid red; */
+}
+
+.next1 .runner {
+  padding-top: 47px;
+  padding-left: 240px;
+}
+
+.category_runner .runner {
+  font-size: 35px;
+  /* border: 1px dotted darkblue; */
+}
+
+.est {
+  padding-top: 5px;
+}
+
+.est,
+.category {
+  font-size: 26px;
+  font-family: 'NotoSansJP-Medium';
+  /* border: 1px dotted darkblue; */
+}
+
+.next2 .title,
+.next3 .title {
+  font-size: 45px;
+  /* border: 1px solid salmon; */
+}
+
+.runner {
+  padding-left: 180px;
+  font-size: 27px;
+  font-family: 'NotoSansJP-semiBold';
+}
+
+.next2 .runner {
+  padding-top: 5px;
+}
+
+.next3 .runner {
+  padding-top: 2px;
+}

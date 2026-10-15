@@ -1,0 +1,86 @@
+{
+  "name": "THD2026",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Chien",
+  "scripts": {
+    "autofix": "run-s autofix:*",
+    "autofix:browser": "eslint --fix --ext .ts,.vue src/dashboard && eslint --fix --ext .ts,.vue src/graphics",
+    "autofix:extension": "eslint --fix --ext .ts src/extension && eslint --fix --ext .d.ts src/types",
+    "prebuild": "npm run clean",
+    "build": "run-s clean build:*",
+    "build:browser": "vite build",
+    "build:extension": "tsc -b tsconfig.extension.json",
+    "clean": "trash node_modules/.cache && trash shared/dist && trash dashboard && trash graphics && trash extension",
+    "lint": "run-s lint:*",
+    "lint:browser": "eslint --ext .ts,.vue src/dashboard && eslint --ext .ts,.vue src/graphics",
+    "lint:extension": "eslint --ext .ts src/extension && eslint --ext .d.ts src/types",
+    "schema-types": "nodecg schema-types",
+    "start": "node ../..",
+    "watch": "run-p watch:*",
+    "watch:browser": "vite",
+    "watch:extension": "tsc -b tsconfig.extension.json -w"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "vue3-resize-text": "^0.1.0"
+  },
+  "devDependencies": {
+    "@quasar/extras": "^1.15.11",
+    "@quasar/vite-plugin": "^1.3.0",
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vueuse/head": "^0.9.8",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-vue": "^9.9.0",
+    "nodecg-cli": "^8.6.0",
+    "nodecg-types": "^1.9.0",
+    "nodecg-vue-composable": "^1.1.0",
+    "npm-run-all": "^4.1.5",
+    "quasar": "^2.11.7",
+    "trash-cli": "^7.2.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.5.3",
+    "vite-plugin-checker": "0.6.4",
+    "vite-plugin-nodecg": "^2.0.0-rc2",
+    "vue": "^3.2.47",
+    "vue-eslint-parser": "^9.1.0",
+    "vue-tsc": "^1.2.1"
+  },
+  "nodecg": {
+    "compatibleRange": "^2.2.1",
+    "graphics": [
+      {
+        "file": "singleHd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleSd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleSd-2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "doubleHD.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "setup.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  background-repeat: no-repeat;
+  color: white;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Bold';
+  src: url(../fonts/NotoSansJP-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSansJP-SemiBold';
+  src: url(../fonts/NotoSansJP-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Medium';
+  src: url(../fonts/NotoSansJP-Medium.ttf) format('truetype');
+}

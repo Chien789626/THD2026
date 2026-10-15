@@ -1,0 +1,271 @@
+body {
+  background-image: url('../images/4x3.png');
+}
+
+/*--------------------------------------------------
+timer
+--------------------------------------------------*/
+
+.time {
+  position: absolute;
+  width: 360px;
+  height: 130px;
+  left: 100px;
+  top: 720px;
+  text-align: center;
+}
+
+.time p {
+  margin-bottom: 0;
+}
+
+.time > span {
+  font-size: 64px;
+  font-family: 'RoundedHeavy';
+}
+
+.time > span.stopped {
+  color: white;
+  -webkit-text-stroke: 2.7px #006d98;
+}
+
+.time > span.running {
+  color: white;
+  -webkit-text-stroke: 2.7px #006d98;
+}
+
+.time > span.paused {
+  color: #bfbfbf;
+  -webkit-text-stroke: 2.7px #4e4e4e;
+}
+
+.time > span.finished {
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.est,
+.mes {
+  font-size: 28px;
+  line-height: 80%;
+  font-family: 'RoundedHeavy';
+  color: white;
+  -webkit-text-stroke: 2px #006d98;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.est {
+  padding-left: 15px;
+}
+
+/*--------------------------------------------------
+gameinfo
+--------------------------------------------------*/
+
+.gametitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 1130px;
+  height: 50px;
+  left: 725px;
+  top: 881px;
+}
+
+.gametitle span {
+  position: relative;
+  font-size: 46.3px;
+  font-family: 'RoundedHeavy';
+}
+
+.runcategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 830px;
+  height: 40px;
+  left: 720px;
+  top: 1000px;
+  font-size: 34px;
+  font-family: 'RoundedHeavy';
+}
+
+.runsystem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 1590px;
+  top: 1000px;
+  font-size: 34px;
+  font-family: 'RoundedHeavy';
+}
+
+/*--------------------------------------------------
+player
+--------------------------------------------------*/
+.player1 .player_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 75px;
+  top: 475px;
+}
+
+.player1 .player_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 32px;
+  font-family: 'RoundedMedium';
+  text-align: center;
+}
+
+.player1.clear .player_time {
+  opacity: 0;
+}
+
+.player1 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 95px;
+  top: 460px;
+  font-size: 36px;
+  font-family: 'RoundedMedium';
+  text-align: center;
+}
+
+.controller {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-left: 5px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.twitch,
+.twitter,
+.youtube {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitch_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.twitter_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.youtube_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+/*--------------------------------------------------
+Commentator
+--------------------------------------------------*/
+.commentator1 .commentator_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 50px;
+  top: 550px;
+}
+
+.commentator1 .commentator_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 30px;
+  font-family: 'RoundedBold';
+  text-align: center;
+}
+
+.commentator1 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 915px;
+  font-size: 36px;
+  font-family: 'RoundedBold';
+  text-align: center;
+}
+
+.microphone {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-left: 5px;
+  vertical-align: 3px;
+  background-size: contain;
+}
+
+/********************************
+commentator2
+********************************/
+.commentator2 .commentator_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 50px;
+  top: 600px;
+}
+
+.commentator2 .commentator_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 30px;
+  font-family: 'RoundedHeavy';
+  text-align: center;
+}
+
+.commentator2 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 990px;
+  font-size: 36px;
+  font-family: 'RoundedHeavy';
+  text-align: center;
+}
+
+/*--------------------------------------------------
+sponsor logo
+--------------------------------------------------*/
+.container {
+  position: relative;
+  width: 205px;
+  height: 180px;
+}
+
+.image1 {
+  position: absolute;
+  top: 55px;
+  left: 520px;
+}
+
+.image2 {
+  position: absolute;
+  top: 90px;
+  left: 500px;
+}
