@@ -98,7 +98,7 @@ let startTimer = () => {
       default:
         isShow.value++;
     }
-  }, 5000);
+  }, 30000);
   //30000 = 30秒
 };
 

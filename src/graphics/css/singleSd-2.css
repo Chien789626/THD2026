@@ -36,12 +36,14 @@ timer
 
 .time > span.paused {
   color: #bfbfbf;
-  -webkit-text-stroke: 2.7px #4e4e4e;
+  -webkit-text-stroke: 4px #4e4e4e;
+  paint-order: stroke fill;
 }
 
 .time > span.finished {
   color: #fbf46b;
-  -webkit-text-stroke: 2.7px #a7a31e;
+  -webkit-text-stroke: 4px #a7a31e;
+  paint-order: stroke fill;
 }
 
 .estimate {
