@@ -199,7 +199,7 @@ watch(name, (newValue: string) => {
 
 <template>
   <div :class="{ clear: finishTime }">
-    <div class="player_time">
+    <div class="player_time" v-if="finishTime">
       {{ finishTime }}
     </div>
     <transition name="social" mode="out-in">

@@ -164,8 +164,8 @@ player
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 1.2;
-  transform: translateY(-1px);
+  line-height: 1.4;
+  transform: translateY(-2px);
 }
 
 /* ロゴの見た目に合わせて個別調整 */
@@ -244,8 +244,8 @@ Commentator
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 1.2;
-  transform: translateY(-1px);
+  line-height: 1.4;
+  transform: translateY(-2px);
 }
 
 /* ロゴの見た目に合わせて個別調整 */

@@ -111,14 +111,10 @@ player
   width: 415px;
   height: 45px;
   left: 218px;
-  top: 608px;
+  top: 605px;
   font-size: 35px;
   font-family: 'NotoSansJP-Medium';
   /* border: 1px solid #000000; */
-}
-
-.player1.clear .player_time {
-  opacity: 0;
 }
 
 /* SNS表示エリア */
@@ -131,7 +127,7 @@ player
   width: 415px;
   height: 45px;
   left: 218px;
-  top: 608px;
+  top: 605px;
   padding: 0 6px;
   font-family: 'NotoSansJP-Medium';
   overflow: hidden;
@@ -163,8 +159,8 @@ player
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 1.2;
-  transform: translateY(-1px);
+  line-height: 1.4;
+  transform: translateY(-2px);
 }
 
 /* ロゴの見た目に合わせて個別調整 */
@@ -183,6 +179,9 @@ player
   height: 38px;
 }
 
+.player1.clear .player_time {
+  opacity: 0;
+}
 /*--------------------------------------------------
 player2
 --------------------------------------------------*/
@@ -195,14 +194,10 @@ player2
   width: 415px;
   height: 45px;
   left: 1155px;
-  top: 608px;
+  top: 605px;
   font-size: 35px;
   font-family: 'NotoSansJP-Medium';
   /* border: 1px solid #000000; */
-}
-
-.player2.clear .player_time {
-  opacity: 0;
 }
 
 /* SNS表示エリア */
@@ -215,7 +210,7 @@ player2
   width: 415px;
   height: 45px;
   left: 1155px;
-  top: 608px;
+  top: 605px;
   padding: 0 6px;
   font-family: 'NotoSansJP-Medium';
   overflow: hidden;
@@ -247,8 +242,8 @@ player2
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 1.2;
-  transform: translateY(-1px);
+  line-height: 1.4;
+  transform: translateY(-2px);
 }
 
 /* ロゴの見た目に合わせて個別調整 */
@@ -267,6 +262,10 @@ player2
   height: 38px;
 }
 
+.player2.clear .player_time {
+  opacity: 0;
+}
+
 /*--------------------------------------------------
 Commentator
 --------------------------------------------------*/
@@ -279,10 +278,10 @@ Commentator
   width: 415px;
   height: 45px;
   left: 862px;
-  top: 725px;
+  top: 723px;
   font-size: 35px;
   font-family: 'NotoSansJP-Medium';
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
 }
 
 /* SNS表示エリア */
@@ -294,10 +293,10 @@ Commentator
   box-sizing: border-box;
   width: 415px;
   height: 45px;
-  left: 818px;
-  top: 725px;
+  left: 840px;
+  top: 723px;
   padding: 0 6px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   font-family: 'NotoSansJP-Medium';
   overflow: hidden;
 }
@@ -327,8 +326,8 @@ Commentator
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 1.2;
-  transform: translateY(-1px);
+  line-height: 1.4;
+  transform: translateY(-2px);
 }
 
 /* ロゴの見た目に合わせて個別調整 */
